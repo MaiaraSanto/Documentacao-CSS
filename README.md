@@ -1,9 +1,10 @@
 # Documentacao-CSS
 
-````
+```bash
+
 /* GLOBAL */
 
-/* Define variáveis globais para cores, tamanhos de fonte e transições */
+/* Variáveis globais para cores, tamanhos de fonte e transições */
 :root {
   --bg-body: hsl(0, 0%, 8%);
   --bg-body2: hsl(0, 0%, 14%);
@@ -16,7 +17,7 @@
   --transition: 250ms ease-in-out;
 }
 
-/* Define estilos básicos para o documento HTML */
+/* Estilos básicos para o documento HTML */
 html,
 body {
   overflow-x: hidden;
@@ -69,7 +70,7 @@ h3 {
   line-height: 1;
 }
 
-/* Define estilos para títulos de diferentes tamanhos */
+/* Estilos para títulos de diferentes tamanhos */
 .header-xl {
   /* Tamanho de fonte responsivo com clamp() */
   font-size: 2.5rem;
@@ -92,7 +93,7 @@ a {
   transition: color var(--transition);
 }
 
-/* Define estilo para o foco visível em elementos focáveis */
+/* Estilo para o foco visível em elementos focáveis */
 a:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
@@ -100,13 +101,13 @@ textarea:focus-visible {
   outline-offset: 2px;
 }
 
-/* Define estilo para inputs e textareas inválidos */
+/* Estilo para inputs e textareas inválidos */
 input:invalid,
 textarea:invalid {
   outline-color: var(--invalid);
 }
 
-/* Define estilo para links com sublinhado */
+/* Estilo para links com sublinhado */
 a.underline,
 button {
   /* Estilo de botão com efeito de sublinhado animado */
@@ -160,8 +161,6 @@ svg {
 
 /* ACESSIBILIDADE */
 
-/* Certifique-se de fornecer alternativas de texto para imagens */
-img,
 svg {
   /* O atributo 'alt' é fundamental para usuários de leitores de tela */
   alt: "";
@@ -169,17 +168,17 @@ svg {
 
 /* Mantenha uma boa estrutura de cabeçalho para facilitar a navegação */
 h1, h2, h3 {
-  /* Use cabeçalhos em ordem lógica */
+  /* Usa cabeçalhos em ordem lógica */
 }
 
 /* Atribua rótulos apropriados para controles de formulário */
 label {
-  /* Use o atributo 'for' correspondente ao ID do controle */
+  /* Usa o atributo 'for' correspondente ao ID do controle */
 }
 
-/* Utilize atributos 'aria-' para identificar regiões e controles importantes */
+/* Utiliza atributos 'aria-' para identificar regiões e controles importantes */
 .header {
-  /* Use 'role="banner"' para identificar o cabeçalho do site */
+  /* Usa 'role="banner"' para identificar o cabeçalho do site */
 }
 
-````
+```
